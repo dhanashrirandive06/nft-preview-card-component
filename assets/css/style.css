@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 20vw;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: hsl(216, 50%, 16%);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+/* Image Overlay */
+.image-wrapper {
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  min-height: 18rem;
+  border-radius: 0.5rem;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: hsl(178deg 100% 50% / 50%);
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+.image-wrapper:hover .overlay {
+  opacity: 1;
+  width: 100%;
+  min-height: 100%;
+}
+
+
+
+/* .card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+    cursor: pointer;
+} */
+
+.card-title {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.card-title:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.card-para {
+  font-size: 1rem;
+  color: hsla(215, 52%, 70%, 0.842);
+  font-weight: 200;
+}
+
+.card-text {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 0.1px solid hsla(215, 52%, 70%, 0.224);
+}
+
+.eth {
+  color: hsl(178, 100%, 50%);
+  display: flex;
+  align-items: center;
+}
+
+.img-text {
+  margin: 0 0.5rem 0 0;
+  height: 1rem;
+}
+
+.days {
+  color: hsla(215, 52%, 70%, 0.955);
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.avt-img {
+  width: 13%;
+  height: 13%;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+
+.avt-text {
+  margin: 0 1rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.avt-text:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.created-text {
+  color: hsl(215, 51%, 70%);
+}
+
+/* Media Query  */
+
+@media (max-width: 1199.98px) {
+  .container {
+    width: 35vw;
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    width: 70vw;
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 80vw;
+    max-height: 100%;
+  }
+}
